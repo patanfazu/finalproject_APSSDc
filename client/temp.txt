@@ -1,0 +1,36 @@
+/*users.post('/score', (req,res) =>{
+  const userd={
+    score:req.body.score
+  }
+ 
+  User.findOne({
+    where:{
+      name:req.body.name
+    }
+  })
+  .then(user =>{
+    if(user){
+      User.create(userd)
+      .then(user => {
+        res.json({ status: user.name + 'Registered!' })
+      })
+      .catch(err => {
+        res.send('error: ' + err)
+      })
+      
+    }
+
+  })
+
+})*//*
+export const score = user =>{
+  return axios
+  .post('users/score',{
+    name:'fazu',
+    score:14
+  })
+  .then(response =>{
+    console.log('Score updated');
+    })
+}
+*/
